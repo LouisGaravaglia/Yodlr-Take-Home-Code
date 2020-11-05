@@ -1,25 +1,19 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
+import Routes from "./Routes";
 import './App.css';
+import NavBar from "./NavBar";
+import YodlrAPI from './YodlrAPI';
+import UserContext from "./UserContext";
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar/>
+      <Routes/>
     </div>
   );
 }
 
 export default App;
+
